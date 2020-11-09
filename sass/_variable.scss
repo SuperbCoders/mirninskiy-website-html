@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'tt_commons_boldbold';
+    src: url('../fonts/ttcommons-bold.woff2') format('woff2'),
+         url('../fonts/ttcommons-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'tt_commonsdemibold';
+    src: url('../fonts/ttcommons-demibold.woff2') format('woff2'),
+         url('../fonts/ttcommons-demibold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'tt_commonsmedium';
+    src: url('../fonts/ttcommons-medium.woff2') format('woff2'),
+         url('../fonts/ttcommons-medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'tt_commonsregular';
+    src: url('../fonts/ttcommons-regular.woff2') format('woff2'),
+         url('../fonts/ttcommons-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+$font: 'tt_commonsregular', sans-serif;
+$font-m: 'tt_commonsmedium', sans-serif;
+$font-db: 'tt_commonsdemibold', sans-serif;
+$font-b: 'tt_commons_boldbold', sans-serif;
+$font-tnr: 'Times New Roman', Garamond, Georgia, serif;
+
+$dark: #0C1427;
+$red: #F1260A;
+$grey: #677480;
+$grey2: #E8E8E8;
+$grey3: #F6F6F6;
+$grey4: #EEEEEE;
+$blue: #52A7F5;
+$blue2: #8ED5EC;
