@@ -1,8 +1,11 @@
-$(document).ready(function () {
-    $('body').on('click', '.tabs-head', function () {
-        let tabs = $(this).data('tabs');
-        $('.tabs-head, .tabs-dropdown').removeClass('active');
-        $(this).addClass('active');
-        $('#'+tabs).addClass('active');
-    });
-});
+var mySwiper = new Swiper('.news-slider-wrap', {
+    loop: false,
+    spaceBetween: 30,
+    slidesPerView: 5,
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.news-slider-next',
+        prevEl: '.news-slider-prev',
+    },
+})
