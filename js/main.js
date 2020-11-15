@@ -8,4 +8,12 @@ var mySwiper = new Swiper('.news-slider-wrap', {
         nextEl: '.news-slider-next',
         prevEl: '.news-slider-prev',
     },
-})
+});
+
+$(document).ready(function () {
+    $("body").on("click", ".nav-catalog", function (event) {
+        $(".nav-dropdown").toggleClass("active");
+    }).on("click", ".nav-search, .nav-search-dropdown-close", function (event) {
+        $(".nav-search-dropdown").toggleClass("active");
+    });
+});
