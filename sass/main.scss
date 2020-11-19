@@ -260,21 +260,24 @@ a {
                 }
             }
         }
-
-        &:hover {
-            > a {
-                color: $blue;
-
-                .icon {
+        
+        @media screen and (min-width: 992px) {
+            &:hover {
+                > a {
                     color: $blue;
+
+                    .icon {
+                        color: $blue;
+                    }
                 }
-            }
 
-            > ul {
-                max-height: 100vh;
+                > ul {
+                    max-height: 100vh;
+                    border-bottom: 1px solid $grey2;
 
-                a {
-                    padding: 5px 20px;
+                    a {
+                        padding: 5px 20px;
+                    }
                 }
             }
         }
@@ -298,6 +301,10 @@ a {
             font-size: 8px;
             margin-left: 5px;
             transition: all .3s;
+        }
+        
+        &-mobile {
+            display: none;
         }
     }
 
@@ -477,6 +484,11 @@ a {
 
     &-link {
         display: inline-flex;
+    }
+    &-img {
+        &-m {
+            display: none;
+        }
     }
 }
 
@@ -1058,6 +1070,7 @@ h1,
             font-size: 19px;
             line-height: 23px;
             font-family: $font-tnr;
+            margin: auto;
         }
 
         &-img {

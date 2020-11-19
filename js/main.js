@@ -1,13 +1,22 @@
 var mySwiper = new Swiper('.news-slider-wrap', {
-    loop: false,
     spaceBetween: 30,
-    slidesPerView: 5,
-
-    // Navigation arrows
+    slidesPerView: 1,
     navigation: {
         nextEl: '.news-slider-next',
         prevEl: '.news-slider-prev',
     },
+    breakpoints: {
+        480: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 3,
+        },
+        992: {
+            slidesPerView: 5,
+            spaceBetween: 40
+        }
+    }
 });
 
 $(document).ready(function () {
@@ -15,5 +24,7 @@ $(document).ready(function () {
         $(".nav-dropdown").toggleClass("active");
     }).on("click", ".nav-search, .nav-search-dropdown-close", function (event) {
         $(".nav-search-dropdown").toggleClass("active");
+    }).on("click", ".nav-link-mobile", function (event) {
+        $(".nav-list").toggleClass("active");
     });
 });
